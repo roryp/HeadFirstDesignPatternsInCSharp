@@ -2,34 +2,34 @@ using System;
 
 namespace HeadFirstDesignPatterns.AbstractFactory.PizzaStore
 {
-	/// <summary>
-	/// Summary description for PizzaStore.
-	/// </summary>
-	public abstract class PizzaStore
-	{
-		#region Constructor
-		public PizzaStore()
-		{}
-		#endregion//Constructor
+    /// <summary>
+    /// Summary description for PizzaStore.
+    /// </summary>
+    public abstract class PizzaStore
+    {
+        #region Constructor
+        public PizzaStore()
+        { }
+        #endregion//Constructor
 
-		#region OrderPizza
-		public Pizza OrderPizza(string type)
-		{
-			Pizza pizza;
-			
-			pizza = CreatePizza(type);
+        #region OrderPizza
+        public Pizza OrderPizza(string type)
+        {
+            Pizza pizza;
 
-			pizza.Prepare();
-			pizza.Bake();
-			pizza.Cut();
-			pizza.Box();
+            pizza = CreatePizza(type);
 
-			return pizza;
-		}
-		#endregion//OrderPizza
+            pizza.Prepare();
+            pizza.Bake();
+            pizza.Cut();
+            pizza.Box();
 
-		#region CreatePizza
-		protected abstract Pizza CreatePizza(string type);
-		#endregion//CreatePizza
-	}
+            return pizza;
+        }
+        #endregion//OrderPizza
+
+        #region CreatePizza
+        protected abstract Pizza CreatePizza(string type);
+        #endregion//CreatePizza
+    }
 }

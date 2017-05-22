@@ -2,23 +2,23 @@ using System;
 
 namespace HeadFirstDesignPatterns.AbstractFactory.PizzaStore
 {
-	/// <summary>
-	/// Summary description for EggPlant.
-	/// </summary>
-	public class EggPlant :IVeggies
-	{
-		#region Constructor
-		public EggPlant()
-		{}
-		#endregion//Constructor
-		
-		#region IVeggies Members
+    /// <summary>
+    /// Summary description for EggPlant.
+    /// </summary>
+    public class EggPlant : IVeggies
+    {
+        #region Constructor
+        public EggPlant()
+        { }
+        #endregion//Constructor
 
-		public string toString()
-		{
-			return "Egg Plant";
-		}
+        #region IVeggies Members
 
-		#endregion
-	}
+        public string toString()
+        {
+            return "Egg Plant";
+        }
+
+        #endregion
+    }
 }

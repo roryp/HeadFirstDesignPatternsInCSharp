@@ -2,23 +2,23 @@ using System;
 
 namespace HeadFirstDesignPatterns.AbstractFactory.PizzaStore
 {
-	/// <summary>
-	/// Summary description for ReggianoCheese.
-	/// </summary>
-	public class ReggianoCheese : ICheese
-	{
-		#region Constructor
-		public ReggianoCheese()
-		{}
-		#endregion//Constructor
-		
-		#region ICheese Members
+    /// <summary>
+    /// Summary description for ReggianoCheese.
+    /// </summary>
+    public class ReggianoCheese : ICheese
+    {
+        #region Constructor
+        public ReggianoCheese()
+        { }
+        #endregion//Constructor
 
-		public string toString()
-		{
-			return "Reggiano Cheese";
-		}
+        #region ICheese Members
 
-		#endregion
-	}
+        public string toString()
+        {
+            return "Reggiano Cheese";
+        }
+
+        #endregion
+    }
 }

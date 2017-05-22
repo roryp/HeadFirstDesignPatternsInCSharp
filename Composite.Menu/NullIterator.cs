@@ -3,43 +3,43 @@ using System.Collections;
 
 namespace HeadFirstDesignPatterns.Composite.Menu
 {
-	/// <summary>
-	/// Summary description for NullIterator.
-	/// </summary>
-	public class NullIterator : IEnumerator, IEnumerable
-	{
-		public NullIterator()
-		{}
+    /// <summary>
+    /// Summary description for NullIterator.
+    /// </summary>
+    public class NullIterator : IEnumerator, IEnumerable
+    {
+        public NullIterator()
+        { }
 
-		#region IEnumerator Members
+        #region IEnumerator Members
 
-		public void Reset()
-		{
-			throw new UnsupportedOperationException("We ain't doing it");
-		}
+        public void Reset()
+        {
+            throw new UnsupportedOperationException("We ain't doing it");
+        }
 
-		public object Current
-		{
-			get
-			{
-				return null;
-			}
-		}
+        public object Current
+        {
+            get
+            {
+                return null;
+            }
+        }
 
-		public bool MoveNext()
-		{
-			return false;
-		}
+        public bool MoveNext()
+        {
+            return false;
+        }
 
-		#endregion
+        #endregion
 
-		#region IEnumerable Members
+        #region IEnumerable Members
 
-		public IEnumerator GetEnumerator()
-		{
-			return (IEnumerator)this;
-		}
+        public IEnumerator GetEnumerator()
+        {
+            return (IEnumerator)this;
+        }
 
-		#endregion
-	}
+        #endregion
+    }
 }

@@ -1,54 +1,54 @@
 
 namespace HeadFirstDesignPatterns.Strategy.Duck
 {
-	/// <summary>
-	/// abstract base class of Ducks
-	/// </summary>
-	public abstract class Duck
-	{
-		protected IFlyBehavior flyBehavior;
-		protected IQuackBehavior quackBehavior;
-		
-		public IQuackBehavior QuackBehavior
-		{
-			get
-			{
-				return quackBehavior;
-			}
-			set
-			{
-				quackBehavior = value;
-			}
-		}
+    /// <summary>
+    /// abstract base class of Ducks
+    /// </summary>
+    public abstract class Duck
+    {
+        protected IFlyBehavior flyBehavior;
+        protected IQuackBehavior quackBehavior;
 
-		public IFlyBehavior FlyBehavoir
-		{
-			get
-			{
-				return flyBehavior;
-			}
-			set
-			{
-				flyBehavior = value;
-			}
-		}
+        public IQuackBehavior QuackBehavior
+        {
+            get
+            {
+                return quackBehavior;
+            }
+            set
+            {
+                quackBehavior = value;
+            }
+        }
 
-		
-		public abstract object Display();
+        public IFlyBehavior FlyBehavoir
+        {
+            get
+            {
+                return flyBehavior;
+            }
+            set
+            {
+                flyBehavior = value;
+            }
+        }
 
-		public object PerformFly()
-		{
-			return FlyBehavoir.Fly();
-		}
 
-		public object PerformQuack()
-		{
-			return QuackBehavior.Quacking();
-		}
+        public abstract object Display();
 
-		public string Swim()
-		{
-			return "All ducks float, even decoys!";
-		}
-	}
+        public object PerformFly()
+        {
+            return FlyBehavoir.Fly();
+        }
+
+        public object PerformQuack()
+        {
+            return QuackBehavior.Quacking();
+        }
+
+        public string Swim()
+        {
+            return "All ducks float, even decoys!";
+        }
+    }
 }

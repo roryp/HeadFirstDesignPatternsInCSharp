@@ -2,23 +2,23 @@ using System;
 
 namespace HeadFirstDesignPatterns.AbstractFactory.PizzaStore
 {
-	/// <summary>
-	/// Summary description for Onion.
-	/// </summary>
-	public class Onion :IVeggies
-	{
-		#region Constructor
-		public Onion()
-		{}
-		#endregion//Constructor
-		
-		#region IVeggies Members
+    /// <summary>
+    /// Summary description for Onion.
+    /// </summary>
+    public class Onion : IVeggies
+    {
+        #region Constructor
+        public Onion()
+        { }
+        #endregion//Constructor
 
-		public string toString()
-		{
-			return "Onion";
-		}
+        #region IVeggies Members
 
-		#endregion
-	}
+        public string toString()
+        {
+            return "Onion";
+        }
+
+        #endregion
+    }
 }

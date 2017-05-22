@@ -2,21 +2,21 @@ using System;
 
 namespace HeadFirstDesignPatterns.Strategy.Character
 {
-	/// <summary>
-	/// Summary description for BowAndArrowBehavior.
-	/// </summary>
-	public class BowAndArrowBehavior : IWeaponBehavior
-	{
-		public BowAndArrowBehavior()
-		{}
+    /// <summary>
+    /// Summary description for BowAndArrowBehavior.
+    /// </summary>
+    public class BowAndArrowBehavior : IWeaponBehavior
+    {
+        public BowAndArrowBehavior()
+        { }
 
-		#region IWeaponBehavior Members
+        #region IWeaponBehavior Members
 
-		public string UsingWeapon()
-		{
-			return "I shot my arrow at thee!";
-		}
+        public string UsingWeapon()
+        {
+            return "I shot my arrow at thee!";
+        }
 
-		#endregion
-	}
+        #endregion
+    }
 }

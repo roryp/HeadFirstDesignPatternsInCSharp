@@ -2,23 +2,23 @@ using System;
 
 namespace HeadFirstDesignPatterns.AbstractFactory.PizzaStore
 {
-	/// <summary>
-	/// Summary description for Garlic.
-	/// </summary>
-	public class Garlic :IVeggies
-	{
-		#region Constructor
-		public Garlic()
-		{}
-		#endregion//Constructor
-		
-		#region IVeggies Members
+    /// <summary>
+    /// Summary description for Garlic.
+    /// </summary>
+    public class Garlic : IVeggies
+    {
+        #region Constructor
+        public Garlic()
+        { }
+        #endregion//Constructor
 
-		public string toString()
-		{
-			return "Garlic";
-		}
+        #region IVeggies Members
 
-		#endregion
-	}
+        public string toString()
+        {
+            return "Garlic";
+        }
+
+        #endregion
+    }
 }

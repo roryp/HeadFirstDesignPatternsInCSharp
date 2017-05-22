@@ -7,7 +7,7 @@ namespace UnitTestProject
     [TestClass]
     public class AdapterBirdFixture
     {
-        
+
         [TestMethod]
         public void TestMallardDuck()
         {

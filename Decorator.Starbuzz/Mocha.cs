@@ -3,32 +3,32 @@ using System.Configuration;
 
 namespace HeadFirstDesignPatterns.Decorator.Starbuzz
 {
-	/// <summary>
-	/// Summary description for Mocha.
-	/// </summary>
-	public class Mocha : CondimentDecorator
-	{
-		Beverage beverage;
-		
-		public Mocha(Beverage beverage)
-		{
-			this.beverage = beverage;
-		}
+    /// <summary>
+    /// Summary description for Mocha.
+    /// </summary>
+    public class Mocha : CondimentDecorator
+    {
+        Beverage beverage;
 
-		public override string GetDescription()
-		{
-			return beverage.GetDescription() + ", Mocha";
-		}
+        public Mocha(Beverage beverage)
+        {
+            this.beverage = beverage;
+        }
 
-		public override double Cost()
-		{
-			return GetSize(base.Size);
-		}
+        public override string GetDescription()
+        {
+            return beverage.GetDescription() + ", Mocha";
+        }
 
-		private double GetSize(BeverageSize size)
-		{
-			switch(size)
-			{
+        public override double Cost()
+        {
+            return GetSize(base.Size);
+        }
+
+        private double GetSize(BeverageSize size)
+        {
+            switch (size)
+            {
                 case BeverageSize.TALL:
                     return Convert.ToDouble(".10") +
                         beverage.Cost();
@@ -41,8 +41,8 @@ namespace HeadFirstDesignPatterns.Decorator.Starbuzz
                 default:
                     return .20;
 
-			}
-		}
+            }
+        }
 
-	}
+    }
 }
